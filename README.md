@@ -1,73 +1,75 @@
-# Welcome to your Lovable project
+# Portfolio - test - react
 
-## Project info
+Uma aplicação moderna de chat construída com React, TypeScript e shadcn/ui. Este projeto foi criado com foco em um design de interface bonito e excelente experiência do usuário.
 
-**URL**: https://lovable.dev/projects/83a0a2b0-eac6-464c-8fba-34920f00a409
+## Funcionalidades
 
-## How can I edit this code?
+- Interface moderna com componentes shadcn/ui
+- Design totalmente responsivo
+- TypeScript para segurança de tipos
+- Construído com Vite para desenvolvimento rápido e builds otimizadas para produção
+- Estilização com Tailwind CSS
 
-There are several ways of editing your application.
+## Tecnologias Utilizadas
 
-**Use Lovable**
+- React 18
+- TypeScript
+- Vite
+- shadcn/ui
+- Tailwind CSS
+- React Router
+- React Query
+- React Hook Form
+- Zod para validação
+- GSAP para animações
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/83a0a2b0-eac6-464c-8fba-34920f00a409) and start prompting.
+## Começando
 
-Changes made via Lovable will be committed automatically to this repo.
+### Pré-requisitos
 
-**Use your preferred IDE**
+- Node.js (v16 ou posterior)
+- npm ou bun
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Instalação
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone o repositório
+git clone https://github.com/yourusername/dark-spark-portfolio-chat.git
+cd dark-spark-portfolio-chat
 
-Follow these steps:
+# Instale as dependências
+npm install
+# ou
+bun install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Inicie o servidor de desenvolvimento
 npm run dev
+# ou
+bun run dev
 ```
 
-**Edit a file directly in GitHub**
+A aplicação estará disponível em `http://localhost:5173`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Compilando para Produção
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+# ou
+bun run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Estrutura do Projeto
 
-## What technologies are used for this project?
+- `/src` - Código fonte
+- `/public` - Arquivos estáticos
+- `/components` - Componentes de UI reutilizáveis
 
-This project is built with:
+## Licença
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](./LICENSE) para obter detalhes.
 
-## How can I deploy this project?
+## Agradecimentos
 
-Simply open [Lovable](https://lovable.dev/projects/83a0a2b0-eac6-464c-8fba-34920f00a409) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- [shadcn/ui](https://ui.shadcn.com/) pela biblioteca de componentes
+- [Radix UI](https://www.radix-ui.com/) pelos componentes acessíveis
+- [Tailwind CSS](https://tailwindcss.com/) para estilização
