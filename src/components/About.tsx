@@ -1,13 +1,12 @@
-
-import React, { useEffect, useRef, useState } from 'react';
-import { CheckCircle, Calendar, Activity } from 'lucide-react';
+import React, { useEffect, useRef, useState } from "react";
+import { CheckCircle, Calendar, Activity } from "lucide-react";
 
 const skills = [
-  { name: 'React', level: 90 },
-  { name: 'TypeScript', level: 85 },
-  { name: 'Node.js', level: 80 },
-  { name: 'Tailwind CSS', level: 95 },
-  { name: 'Next.js', level: 88 },
+  { name: "React", level: 90 },
+  { name: "TypeScript", level: 85 },
+  { name: "Node.js", level: 80 },
+  { name: "Tailwind CSS", level: 95 },
+  { name: "Next.js", level: 88 },
 ];
 
 const About = () => {
@@ -33,10 +32,14 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="py-24 bg-slate-900/60">
+    <section
+      id="about"
+      ref={sectionRef}
+      className="py-24 bg-slate-50 dark:bg-slate-900/60"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-16">
-          <span className="text-white">Sobre </span>
+          <span className="text-slate-800 dark:text-white">Sobre </span>
           <span className="text-highlight">Mim</span>
         </h2>
 
@@ -51,7 +54,7 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-slate-800 text-highlight font-bold px-4 py-2 rounded-full border border-highlight/30 shadow-lg">
+              <div className="absolute -bottom-4 -right-4 bg-white dark:bg-slate-800 text-highlight font-bold px-4 py-2 rounded-full border border-highlight/30 shadow-lg">
                 5+ Anos
               </div>
             </div>
@@ -59,66 +62,92 @@ const About = () => {
 
           {/* About Text (3/5 of the width) */}
           <div className="md:col-span-3">
-            <h3 className="text-2xl font-semibold mb-4 text-white">Desenvolvedor Full Stack</h3>
-            
-            <p className="text-slate-300 mb-6">
-              Sou um desenvolvedor full stack apaixonado por criar aplicações web e mobile de alta qualidade. Com mais de 5 anos de experiência, combino habilidades técnicas sólidas com uma forte compreensão de design de interface e experiência do usuário.
+            <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-white">
+              Desenvolvedor Full Stack
+            </h3>
+
+            <p className="text-slate-600 dark:text-slate-300 mb-6">
+              Sou um desenvolvedor full stack apaixonado por criar aplicações
+              web e mobile de alta qualidade. Com mais de 5 anos de experiência,
+              combino habilidades técnicas sólidas com uma forte compreensão de
+              design de interface e experiência do usuário.
             </p>
-            
+
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="text-highlight" size={20} />
-                <span className="text-white">Interfaces responsivas</span>
+                <span className="text-slate-700 dark:text-white">
+                  Interfaces responsivas
+                </span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="text-highlight" size={20} />
-                <span className="text-white">Experiências interativas</span>
+                <span className="text-slate-700 dark:text-white">
+                  Experiências interativas
+                </span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="text-highlight" size={20} />
-                <span className="text-white">APIs de alto desempenho</span>
+                <span className="text-slate-700 dark:text-white">
+                  APIs de alto desempenho
+                </span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="text-highlight" size={20} />
-                <span className="text-white">Soluções escaláveis</span>
+                <span className="text-slate-700 dark:text-white">
+                  Soluções escaláveis
+                </span>
               </div>
             </div>
-            
+
             {/* Experience Cards */}
             <div className="grid sm:grid-cols-2 gap-5">
               <div className="glass rounded-lg p-5 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-highlight/20">
                 <div className="flex items-center mb-3">
                   <Calendar className="text-highlight mr-2" size={20} />
-                  <h4 className="font-semibold text-white">Experiência</h4>
+                  <h4 className="font-semibold text-slate-800 dark:text-white">
+                    Experiência
+                  </h4>
                 </div>
-                <p className="text-slate-300">5+ anos desenvolvendo aplicações web e mobile de alta qualidade.</p>
+                <p className="text-slate-600 dark:text-slate-300">
+                  5+ anos desenvolvendo aplicações web e mobile de alta
+                  qualidade.
+                </p>
               </div>
-              
+
               <div className="glass rounded-lg p-5 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-highlight/20">
                 <div className="flex items-center mb-3">
                   <Activity className="text-highlight mr-2" size={20} />
-                  <h4 className="font-semibold text-white">Projetos</h4>
+                  <h4 className="font-semibold text-slate-800 dark:text-white">
+                    Projetos
+                  </h4>
                 </div>
-                <p className="text-slate-300">50+ projetos entregues para clientes em diversos setores.</p>
+                <p className="text-slate-600 dark:text-slate-300">
+                  50+ projetos entregues para clientes em diversos setores.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        
+
         {/* Skills with animated bars */}
-        <div className={`mt-20 ${isVisible ? 'skill-visible' : ''}`}>
-          <h3 className="text-2xl font-bold text-center mb-10">Principais Habilidades</h3>
-          
+        <div className={`mt-20 ${isVisible ? "skill-visible" : ""}`}>
+          <h3 className="text-2xl font-bold text-slate-800 dark:text-white text-center mb-10">
+            Principais Habilidades
+          </h3>
+
           <div className="max-w-3xl mx-auto">
             {skills.map((skill, index) => (
               <div key={index} className="mb-6">
                 <div className="flex justify-between mb-2">
-                  <span className="text-white font-medium">{skill.name}</span>
+                  <span className="text-slate-800 dark:text-white font-medium">
+                    {skill.name}
+                  </span>
                   <span className="text-highlight">{skill.level}%</span>
                 </div>
                 <div className="skill-bar">
-                  <div 
-                    className="skill-progress" 
+                  <div
+                    className="skill-progress"
                     style={{ width: `${skill.level}%` }}
                   />
                 </div>
